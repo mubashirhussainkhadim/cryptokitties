@@ -1,0 +1,131 @@
+.blinking {
+    animation: blinks 3s infinite;
+}
+
+@keyframes blinks {
+
+    0%,
+    29%,
+    31%,
+    47%,
+    49% {
+        border-top: 0px;
+        border-bottom: 0px;
+    }
+
+    30%,
+    48% {
+        border-top: 20px solid;
+        border-bottom: 20px solid;
+    }
+}
+
+.breathing {
+    animation: breathe 4s infinite;
+}
+
+@keyframes breathe {
+
+    20%,
+    80% {
+        transform: scaleX(100%);
+        transform: translateY(0%);
+    }
+
+    40%,
+    55% {
+        transform: scaleX(110%);
+        transform: translateY(-3px);
+    }
+}
+
+.scary {
+    animation: boo 4s infinite;
+}
+
+@keyframes boo {
+
+    0%,
+    80%,
+    90% {
+        transform: scale(100%);
+    }
+
+    81% {
+        transform: scale(130%);
+    }
+}
+
+.tiltingHead {
+    animation: headTilt 5s infinite;
+}
+
+@keyframes headTilt {
+
+    0%,
+    30% {
+        transform: rotate(0deg);
+    }
+
+    10% {
+        transform: rotate(-5deg);
+    }
+
+    20% {
+        transform: rotate(5deg);
+    }
+}
+
+.dancing {
+    bottom: -30px;
+    animation: dance 2s infinite;
+}
+
+@keyframes dance {
+
+    0%,
+    60%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    40% {
+        transform: rotate(-20deg);
+    }
+
+    80% {
+        transform: rotate(20deg);
+    }
+}
+
+.vibing {
+    animation: vibe 1s infinite;
+}
+
+@keyframes vibe {
+
+    0%,
+    100% {
+        transform: translateY(20px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.wagging {
+    animation: wag 1s infinite;
+}
+
+@keyframes wag {
+
+    0%,
+    100% {
+        transform: rotate(-15deg);
+    }
+
+    50% {
+        transform: rotate(15deg);
+    }
+}
